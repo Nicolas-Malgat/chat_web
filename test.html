@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta property="og:type" content="website">
+    <title>HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="formulaire">
+        <h1>Je suis une page</h1>
+
+        <form action="email" method="get">
+            <input type="email" placeholder="email@email.mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required>
+            <button type="submit" style="background-color: darkolivegreen;">Submit</button>
+        </form>
+    </div>
+    
+    <input type="checkbox" id="isexpanded" checked/>
+    <div id="chat">
+        <label for="isexpanded">
+            <header id="chat-header" class="max-width">
+                <div>
+                    <img src="chat.png" alt="icone de chat" class="chat-icon">
+                </div>
+
+                <span id="user">
+                    Benjamin
+                </span>
+
+            </header>
+        </label>
+
+        <div class="chat-box">
+            
+            <div>
+                <div id="historique">
+
+                    <div class="message"> <p>Entrer votre message :</p> </div>
+
+                </div>
+            </div>
+
+            <footer>
+                <form id="message-form">
+                    <input name="name" type="hidden" value="Benjamin">
+                    <div class="form-group">
+                        <input autofocus class="form-control message-input" id="messagebox" name="message"
+                            autocomplete="off" />
+                    </div>
+    
+                    <div class="form-group">
+                        <input class="message-input" type="submit" />
+                    </div>
+    
+                </form>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
